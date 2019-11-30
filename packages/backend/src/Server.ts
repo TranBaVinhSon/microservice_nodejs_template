@@ -12,7 +12,9 @@ const rootDir = __dirname;
 
 @ServerSettings({
   rootDir,
-  acceptMimes: ["application/json"]
+  acceptMimes: ["application/json"],
+  httpPort: 8000,
+  httpsPort: false
 })
 export class Server extends ServerLoader {
   /**

@@ -1,7 +1,8 @@
 import {
   GlobalAcceptMimesMiddleware,
   ServerLoader,
-  ServerSettings
+  ServerSettings,
+  Controller
 } from "@tsed/common";
 import bodyParser from "body-parser";
 import compress from "compression";
@@ -12,7 +13,12 @@ const rootDir = __dirname;
 
 @ServerSettings({
   rootDir,
-  acceptMimes: ["application/json"]
+  acceptMimes: ["application/json"],
+  httpPort: 3000,
+  httpsPort: false,
+  mount: {
+    "/api/v1": `${rootDir}/controllers/v1/*.ts`
+  }
 })
 export class Server extends ServerLoader {
   /**

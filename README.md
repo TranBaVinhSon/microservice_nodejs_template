@@ -1,7 +1,5 @@
-<p align="center">
-  <br />
-  <h2>Microservice Nodejs Template</h2>
-</p>
+
+<h2 align="center">Microservice Nodejs Template</h2>
 <p align="center">
   <a href="https://github.com/prettier/prettier">
     <img

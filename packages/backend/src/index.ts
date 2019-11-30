@@ -1,6 +1,6 @@
 import { $log, ServerLoader } from "@tsed/common";
 import { Server } from "./Server";
-import Logger from "base";
+import { Logger } from "base";
 
 async function bootstrap() {
   try {

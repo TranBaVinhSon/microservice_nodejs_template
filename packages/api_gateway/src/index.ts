@@ -1,6 +1,6 @@
 import { $log, ServerLoader } from "@tsed/common";
 import { Server } from "./Server";
-import Logger from "base";
+import { Logger } from "base";
 
 async function bootstrap() {
   try {
@@ -9,12 +9,10 @@ async function bootstrap() {
 
     await server.listen();
     $log.debug("Server initialized");
-    Logger();
+    Logger(); // hello, world
   } catch (er) {
     $log.error(er);
   }
 }
 
 bootstrap();
-Logger();
-console.log("123");

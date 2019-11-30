@@ -1,0 +1,17 @@
+# microservice_nodejs_template
+node_modules/*
+
+# base package
+packages/base/node_modules/*
+packages/base/dist
+packages/base/tsconfig.tsbuildinfo
+
+# backend package
+packages/backend/node_modules/*
+packages/backend/dist
+packages/backend/tsconfig.tsbuildinfo
+
+# api_gateway package
+packages/api_gateway/node_modules/*
+packages/api_gateway/dist
+packages/api_gateway/tsconfig.tsbuildinfo

@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  api_gateway:
+    container_name: api_gateway
+    build:
+      context: .
+      dockerfile: ./docker/api_gateway/Dockerfile
+    command: ["npm", "--prefix", "packages/api_gateway", "start"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./packages/api_gateway:/microservice_nodejs_template/packages/api_gateway
+      - ./packages/base:/microservice_nodejs_template/packages/base
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: ./docker/backend/Dockerfile
+    command: ["npm", "--prefix", "packages/backend", "start"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./packages/backend:/microservice_nodejs_template/packages/backend
+      - ./packages/base:/microservice_nodejs_template/packages/base

@@ -1,0 +1,27 @@
+{
+  "name": "microservice_nodejs_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:base": "tsc -b packages/base",
+    "build:api_gateway": "tsc -b packages/api_gateway",
+    "build:backend": "tsc -b packages/backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TranBaVinhSon/microservice_nodejs_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TranBaVinhSon/microservice_nodejs_template/issues"
+  },
+  "homepage": "https://github.com/TranBaVinhSon/microservice_nodejs_template#readme",
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  },
+  "dependencies": {
+    "typescript": "^3.7.2"
+  }
+}

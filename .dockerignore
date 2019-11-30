@@ -1,0 +1,3 @@
+./packages/api_gateway/node_modules
+./packages/backend/node_modules
+./packages/base/node_modules

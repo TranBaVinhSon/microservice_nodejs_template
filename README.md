@@ -1,6 +1,6 @@
 <p align="center">
   <br />
-  <b>Microservice Nodejs Template</b>
+  <h2>Microservice Nodejs Template</h2>
 </p>
 <p align="center">
   <a href="https://github.com/prettier/prettier">
@@ -13,12 +13,13 @@
     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Lerna">
   </a><br>
 </p>
+
+<h4 align="center">
+Lerna + Docker + Typescript + EsLint + Prettier
+</h4>
  
-# Table of Contents
 
-- [Usage](#usage)
-
-## Usage
+#### Usage
 
 ```
 docker-compose up

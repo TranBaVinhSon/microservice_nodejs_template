@@ -1,8 +1,4 @@
-import {
-  GlobalAcceptMimesMiddleware,
-  ServerLoader,
-  ServerSettings
-} from "@tsed/common";
+import { GlobalAcceptMimesMiddleware, ServerLoader, ServerSettings } from "@tsed/common";
 import bodyParser from "body-parser";
 import compress from "compression";
 import cookieParser from "cookie-parser";
@@ -14,7 +10,7 @@ const rootDir = __dirname;
   rootDir,
   acceptMimes: ["application/json"],
   httpPort: 8000,
-  httpsPort: false
+  httpsPort: false,
 })
 export class Server extends ServerLoader {
   /**
@@ -29,8 +25,8 @@ export class Server extends ServerLoader {
       .use(bodyParser.json())
       .use(
         bodyParser.urlencoded({
-          extended: true
-        })
+          extended: true,
+        }),
       );
   }
 }

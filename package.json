@@ -6,7 +6,9 @@
   "scripts": {
     "build:base": "tsc -b packages/base",
     "build:api_gateway": "tsc -b packages/api_gateway",
-    "build:backend": "tsc -b packages/backend"
+    "build:backend": "tsc -b packages/backend",
+    "eslint": "npm --prefix packages/api_gateway run eslint & npm --prefix packages/backend run eslint & npm --prefix packages/base run eslint",
+    "eslint:fix": "npm --prefix packages/api_gateway run eslint:fix & npm --prefix packages/backend run eslint:fix & npm --prefix packages/base run eslint:fix"
   },
   "repository": {
     "type": "git",

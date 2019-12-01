@@ -1,9 +1,4 @@
-import {
-  GlobalAcceptMimesMiddleware,
-  ServerLoader,
-  ServerSettings,
-  Controller
-} from "@tsed/common";
+import { GlobalAcceptMimesMiddleware, ServerLoader, ServerSettings } from "@tsed/common";
 import bodyParser from "body-parser";
 import compress from "compression";
 import cookieParser from "cookie-parser";
@@ -17,8 +12,8 @@ const rootDir = __dirname;
   httpPort: 3000,
   httpsPort: false,
   mount: {
-    "/api/v1": `${rootDir}/controllers/v1/*.ts`
-  }
+    "/api/v1": `${rootDir}/controllers/v1/*.ts`,
+  },
 })
 export class Server extends ServerLoader {
   /**
@@ -33,8 +28,8 @@ export class Server extends ServerLoader {
       .use(bodyParser.json())
       .use(
         bodyParser.urlencoded({
-          extended: true
-        })
+          extended: true,
+        }),
       );
   }
 }

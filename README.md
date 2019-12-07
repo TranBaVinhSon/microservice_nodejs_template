@@ -42,7 +42,7 @@ The project has 3 packages (inside [packages directory](https://github.com/TranB
 - backend (http server)
 - base (shared package between `api_gateway` and `backend`)
 
-_Note: Each package has its own client, tsconfig, preitter config._
+_Note: Each package has its own eslint, tsconfig, preitter config._
 
 ## Techstack
 
@@ -91,7 +91,7 @@ npm run build
 npm run build:api_gateway
 ```
 
-- Compile `backend` packages
+- Compile `backend` package
 
 ```
 npm run build:backend
